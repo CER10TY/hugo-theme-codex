@@ -177,7 +177,7 @@ $tocBreakpoint: 1024px;
       margin-top: 0;
     }
     &:hover {
-      background-color: #f6f9fc;
+      background-color: lighten($white, 5%);
     }
   }
 }
@@ -196,7 +196,7 @@ $tocBreakpoint: 1024px;
 footer {
   text-align: center;
   padding: 0 1.5rem;
-  background: #ffffff;
+  background: $white;
 
   p {
     margin-top: 1rem; // reduce margin top due to social icons' padding
@@ -220,6 +220,10 @@ footer {
         margin-left: -15px;
       }
     }
+  }
+
+  a {
+    color: $primary;
   }
 }
 

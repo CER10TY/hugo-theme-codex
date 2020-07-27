@@ -1,0 +1,16 @@
+{{ define "styles" }}
+    {{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/about.scss" "dest" "css/about.css") }}
+{{ end }}
+
+{{ define "main" }}
+    
+{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}    
+
+<div class="splash-container">
+    <div class="splash">
+      <h1>{{ .Content }}</h1>
+    </div>
+  </div>
+  
+
+{{ end }}
