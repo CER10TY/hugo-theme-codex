@@ -31,6 +31,13 @@
       {{ if .Page.Params.url_doc }}
       | <a href="{{ .Page.Params.url_doc }}" class="skill-list-item__url">Documentation</a>
       {{ end }}
+      {{ if .Page.Params.lang }}
+      <ul class="lang-list">
+      {{ range .Page.Params.lang }}
+        <li class="lang-list-item">{{ . }}</li>
+      {{ end }}
+      </ul>
+      {{ end }}
       <hr>
       {{ end }}
     </ul>
