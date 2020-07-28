@@ -1,10 +1,10 @@
-<nav class="nav" id="navigation">
+<nav class="nav-self" id="navigation">
   <ul class="nav__list">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
       <li>
         <a {{ if or ($currentPage.IsMenuCurrent "main" .) (eq $currentPage.Section .Identifier) }} class="active"
-        {{end}} href="{{ .URL }}">{{ .Name }}</a>
+        {{end}} href="{{ .URL }}">{{ .Name }}<span class="fancy">.</span></a>
       </li>
     {{ end }}
   </ul>

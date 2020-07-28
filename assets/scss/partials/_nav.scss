@@ -1,12 +1,11 @@
 @import "burger";
 
-.nav {
+.nav-self {
   font-size: 16px;
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $white;
   visibility: hidden;
   z-index: 1;
 
@@ -18,10 +17,12 @@
   }
 }
 
-.nav--active .nav {
+.nav--active .nav-self {
   visibility: visible;
   height: 100%;
   width: 100%;
+
+  background: $white;
 
   @media screen and (min-width: $medium) {
     width: $navWidth;
@@ -79,4 +80,8 @@
   @media screen and (min-width: $medium) {
     font-size: 1em;
   }
+}
+
+.fancy {
+  color: $primary;
 }

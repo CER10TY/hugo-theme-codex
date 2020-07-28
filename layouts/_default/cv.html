@@ -1,5 +1,5 @@
 {{ define "styles" }}
-    {{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/about.scss" "dest" "css/about.css") }}
+    {{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/cv.scss" "dest" "css/cv.css") }}
 {{ end }}
 
 {{ define "main" }}
@@ -7,10 +7,34 @@
 {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}    
 
 <div class="splash-container">
-    <div class="splash">
-      <h1>{{ .Content }}</h1>
-    </div>
+  <div class="splash">
+    <h1>Projects<span class="fancy">.</span></h1>
+
+    <ul class="skill-list">
+      {{ range .Pages }}
+      <li class="skill-list-item">
+        <h2 class="skill-list-item__title">
+          {{ .Title }}
+        </h2>
+        <p class="skill-list-item__desc">
+          {{ .Page.Params.Desc }}
+        </p>
+      </li>
+      {{ if .Page.Params.url_repo }}
+      <a href="{{ .Page.Params.url_repo }}" class="skill-list-item__url">Repository</a>
+      {{ end }}
+
+      {{ if .Page.Params.url_vscode }}
+      | <a href="{{ .Page.Params.url_vscode }}" class="skill-list-item__url">Marketplace</a>
+      {{ end }}
+
+      {{ if .Page.Params.url_doc }}
+      | <a href="{{ .Page.Params.url_doc }}" class="skill-list-item__url">Documentation</a>
+      {{ end }}
+      <hr>
+      {{ end }}
+    </ul>
   </div>
-  
+</div>
 
 {{ end }}
