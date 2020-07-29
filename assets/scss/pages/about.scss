@@ -33,12 +33,15 @@
     animation: fadeInDown 0.35s ease-in;
   }
 
-  h2 {
-    font-size: 2.25em;
+  p {
+    opacity: 0;
+    font-size: 1em;
     font-weight: 500;
     line-height: 1.25;
-    max-width: 22em;
+    max-width: 30em;
     letter-spacing: -0.03em;
+    color: $grey;
+    animation: fadeInDown 0.35s ease-in 0.7s forwards;
   }
 }
 

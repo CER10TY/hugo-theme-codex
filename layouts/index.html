@@ -11,9 +11,9 @@
     {{ if isset .Params "handle" }}
     <span class="handle">@{{ .Params.handle }}</span>
     {{ end }}
-    <h2>
+    <p>
       {{ .Params.subheading }}
-    </h2>
+    </p>
     <!-- Replace MEEEEE -->
 
     {{ partial "social-icons.html" .}}
