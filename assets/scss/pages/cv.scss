@@ -47,6 +47,10 @@
 
     .skill-list-item__url {
         color: $primary;
+
+        &:hover {
+            color: darken($primary, 15%);
+        }
     }
 
     hr {
