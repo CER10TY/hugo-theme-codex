@@ -34,7 +34,7 @@
   }
 
   p {
-    opacity: 0;
+    opacity: 1;
     font-size: 1em;
     font-weight: 500;
     line-height: 1.25;
@@ -50,7 +50,7 @@
 }
 
 .handle {
-  opacity: 0;
+  opacity: 1;
   display: inline-block;
   margin-top: 0.275em;
   color: $grey;
