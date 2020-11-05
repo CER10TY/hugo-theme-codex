@@ -30,7 +30,7 @@
     line-height: 1;
     letter-spacing: -0.03em;
     margin: 0;
-    animation: fadeInDown 0.35s ease-in;
+    /*animation: fadeInDown 0.35s ease-in;*/
   }
 
   p {
@@ -41,7 +41,7 @@
     max-width: 30em;
     letter-spacing: -0.03em;
     color: $grey;
-    animation: fadeInDown 0.35s ease-in 0.7s forwards;
+    /*animation: fadeInDown 0.35s ease-in 0.7s forwards;*/
   }
 }
 
@@ -55,7 +55,7 @@
   margin-top: 0.275em;
   color: $grey;
   letter-spacing: 0.5px;
-  animation: fadeInDown 0.35s ease-in 0.35s forwards;
+  /*animation: fadeInDown 0.35s ease-in 0.35s forwards;*/
 }
 
 .writing {
