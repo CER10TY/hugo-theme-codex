@@ -17,8 +17,8 @@
 
 .social-icons__link {
   padding: 0.8rem;
-  opacity: 0;
-  animation: fadeLeftToRight 0.3s ease-in 1.05s forwards;
+  opacity: 1;
+  /*animation: fadeLeftToRight 0.3s ease-in 1.05s forwards;*/
 
   &:focus, &:active {
     outline: none;
