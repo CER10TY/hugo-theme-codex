@@ -68,7 +68,6 @@
         gtag('js', new Date());
 
         gtag('config', 'G-3S4BNL83PJ');
-        gtag('event', 'branch_used', { branch: '{{ getenv "BRANCH" }}'});
       </script>
 
   {{ $klaroConfig := resources.Get "js/config.js" | minify | fingerprint }}
